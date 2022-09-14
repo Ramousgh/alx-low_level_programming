@@ -6,7 +6,7 @@
 void print_alphabet(void)
 {
 int ch;
-for (i = 97; i <= 122; i++)
-_putchar(i);
+for (ch = 97; ch <= 122; ch++)
+_putchar(ch);
 _putchar('\n');
 }
