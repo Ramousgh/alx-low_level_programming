@@ -7,7 +7,7 @@
 int _isupper(int c)
 {
 
-	if (c >= 65 && c <= 90)
+	if ((c >= 'A')  && (c <= 'Z'))
 		_putchar(49);
 	else
 		_putchar(48);
