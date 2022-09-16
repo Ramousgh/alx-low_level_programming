@@ -1,5 +1,4 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
 *print_line -write a function that  print line
 *@n: The character to print
