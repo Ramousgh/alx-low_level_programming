@@ -11,7 +11,7 @@ void rev_string(char *s)
 
 	lens = strlen(s);
 
-	for (i = 0; i < lens / 2; i++)
+	for (i = 1; i < lens / 2; i++)
 	{
 		ch = s[i];
 		s[i] = s[lens - 1 - i];
