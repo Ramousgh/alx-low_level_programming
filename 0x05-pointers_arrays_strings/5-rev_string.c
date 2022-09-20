@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	char ch;
-	    
+
 	int i;
 
 	int lens = strlen(s);
@@ -19,5 +19,4 @@ void rev_string(char *s)
 		s[i] = s[lens - i - 1];
 		s[lens - i - 1] = ch;
 	}
-	_putchar(s[i]);
 }
