@@ -7,11 +7,11 @@
 */
 void rev_string(char *s)
 {
-	char ch,
+	char ch;
 	    
-	int i, lens;
+	int i;
 
-	lens = strlen(s);
+	int lens = strlen(s);
 
 	for (i = 0; i < (lens / 2); i++)
 	{
