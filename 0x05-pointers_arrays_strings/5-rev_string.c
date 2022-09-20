@@ -7,7 +7,9 @@
 */
 void rev_string(char *s)
 {
-	int ch, i,  lens;
+	char ch,
+	    
+	int i, lens;
 
 	lens = strlen(s);
 
