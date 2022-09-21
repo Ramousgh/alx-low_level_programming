@@ -10,23 +10,19 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j = 0;
+	int dlen = 0, i;
 
-	char concated[100];
-
-	for (i = 0; dest[i] != '\0'; i++)
+	while (dest[dlen] != '\0')
 	{
-		concated[j] = dest[i];
-		j++;
+		dlen++;
 	}
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; src[i] != 0; i++)
 	{
-		concated[j] = src[i];
-
-		j++;
+		dest[dlen] = src[i];
+		dlen++;
 	}
-	concated[j] = '\0';
-	printf("%s", concated);
-	return (0);
+
+	dest[dlen] = '\0';
+	return (dest);
 }
