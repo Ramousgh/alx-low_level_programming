@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <string.h>
 
 /**
@@ -9,15 +10,23 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
+	int i, j = 0;
 
-	int len = strlen(src);
+	char concated[100];
+
+	for (i = 0; dest[i] != '\0'; i++)
+	{
+		concated[j] = dest[i];
+		j++;
+	}
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[i + len] = src[i];
-	}
-	dest[i + len] = '\0';
-	return (dest);
+		concated[j] = src[i];
 
+		j++;
+	}
+	concated[j] = '\0';
+	printf("%s", concated);
+	return (0);
 }
